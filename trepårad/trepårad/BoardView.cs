@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System;
 namespace trepårad
 {
     class BoardView
@@ -15,16 +14,18 @@ namespace trepårad
             Console.WriteLine(
                 "  a b c\n" +
                 " ┌─────┐\n" +
-                "1│" + "0" + " " + " " + " " + " " + "│\n" +
-                "2│" + " " + " " + " " + " " + "0" + "│\n" +
-                "3│" + "X" + " " + "X" + " " + " " + "│\n" +
+                "1│" + GetChar(m, 0) + " " + GetChar(m, 1) + " " + GetChar(m, 2) + "│\n" +
+                "2│" + GetChar(m, 3) + " " + GetChar(m, 4) + " " + GetChar(m, 5) + "│\n" +
+                "3│" + GetChar(m, 6) + " " + GetChar(m, 7) + " " + GetChar(m, 8) + "│\n" +
                 " └─────┘");
             
         }
 
-        //private static char GetChar(BoardModel boardmodel, int index)
-        //{
-        //    var cell = boardModel.Cells[index];
-        //}
+        private static char GetChar(BoardModel boardModel, int index)
+        {
+            var cell = boardModel.Cells[index];
+            if (cell.IsEmpty()) return ' ';
+            return cell.IsPlayer1() ? 'x' : 'o';
+        }
     }
 }
