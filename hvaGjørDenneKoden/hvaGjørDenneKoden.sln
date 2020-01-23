@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "hvaGjørDenneKoden", "hvaGjørDenneKoden\hvaGjørDenneKoden.vbproj", "{99570378-30FA-47D9-9AB6-002BB7E6CBAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99570378-30FA-47D9-9AB6-002BB7E6CBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99570378-30FA-47D9-9AB6-002BB7E6CBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99570378-30FA-47D9-9AB6-002BB7E6CBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99570378-30FA-47D9-9AB6-002BB7E6CBAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47C3C3C7-09AC-4C73-9D8B-871585D6941B}
+	EndGlobalSection
+EndGlobal
