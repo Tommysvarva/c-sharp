@@ -14,11 +14,22 @@ namespace FlaskeSimulator
             this.content = contentValue;
         }
 
-        public void FillFlask()
+        public void FillFlaskToTop()
         {
             content = capacity;
             Console.WriteLine(content);
-
         }
+
+        public void FillFlaskWith( int amount)
+        {
+            content = Math.Min(content + amount, capacity);
+        }
+        public int EmptyFlask()
+        {
+            var currentContent = content;
+            content = 0;
+            return currentContent;
+        }
+
     }
 }
