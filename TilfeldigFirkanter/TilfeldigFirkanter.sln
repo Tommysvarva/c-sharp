@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+<<<<<<< HEAD
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilfeldigFirkanter", "TilfeldigFirkanter\TilfeldigFirkanter.csproj", "{FF6C2AEC-AD45-45BA-A5F4-7810A2A27A78}"
+=======
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TilfeldigFirkanter", "TilfeldigFirkanter\TilfeldigFirkanter.csproj", "{CA221860-0E2F-4D37-A74E-29A249CDE413}"
+>>>>>>> 7c033900bd3c315d44eca1e43728e21d4c5d868c
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +18,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{FF6C2AEC-AD45-45BA-A5F4-7810A2A27A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FF6C2AEC-AD45-45BA-A5F4-7810A2A27A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF6C2AEC-AD45-45BA-A5F4-7810A2A27A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF6C2AEC-AD45-45BA-A5F4-7810A2A27A78}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{CA221860-0E2F-4D37-A74E-29A249CDE413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA221860-0E2F-4D37-A74E-29A249CDE413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA221860-0E2F-4D37-A74E-29A249CDE413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA221860-0E2F-4D37-A74E-29A249CDE413}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 7c033900bd3c315d44eca1e43728e21d4c5d868c
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
+<<<<<<< HEAD
 		SolutionGuid = {9ACB0B8F-CB27-4594-AFCD-228E9A311F4C}
+=======
+		SolutionGuid = {BEE14D38-BB32-4AA4-9084-2770DEEA0283}
+>>>>>>> 7c033900bd3c315d44eca1e43728e21d4c5d868c
 	EndGlobalSection
 EndGlobal

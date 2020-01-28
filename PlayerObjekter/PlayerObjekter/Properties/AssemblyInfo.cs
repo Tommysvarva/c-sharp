@@ -5,18 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TilfeldigFirkanter")]
+[assembly: AssemblyTitle("PlayerObjekter")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-<<<<<<< HEAD
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TilfeldigFirkanter")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
-=======
 [assembly: AssemblyCompany("HP Inc.")]
-[assembly: AssemblyProduct("TilfeldigFirkanter")]
+[assembly: AssemblyProduct("PlayerObjekter")]
 [assembly: AssemblyCopyright("Copyright © HP Inc. 2020")]
->>>>>>> 7c033900bd3c315d44eca1e43728e21d4c5d868c
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -26,11 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-<<<<<<< HEAD
-[assembly: Guid("ff6c2aec-ad45-45ba-a5f4-7810a2a27a78")]
-=======
-[assembly: Guid("ca221860-0e2f-4d37-a74e-29a249cde413")]
->>>>>>> 7c033900bd3c315d44eca1e43728e21d4c5d868c
+[assembly: Guid("bf6d91b2-da99-4af1-a741-537bea41d0d2")]
 
 // Version information for an assembly consists of the following four values:
 //
