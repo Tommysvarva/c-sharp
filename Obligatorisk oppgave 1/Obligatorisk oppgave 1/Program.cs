@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 
 namespace Obligatorisk_oppgave_1
@@ -11,12 +9,9 @@ namespace Obligatorisk_oppgave_1
     {
         static void Main(string[] args)
         {
-
-            var showPersons = CreatePersons();
-            initiateWelcomeText();
-
-            InitiateUserOptions(showPersons);
-
+             var showPersons = CreatePersons();
+             initiateWelcomeText();
+             InitiateUserOptions(showPersons);
         }
 
         private static void InitiateUserOptions(List<Person> showPersons)
@@ -58,8 +53,7 @@ namespace Obligatorisk_oppgave_1
                 showPersons[id].Show();
                 InitiateUserOptions(showPersons);
             } else
-            {
-                //initiateWelcomeText();
+            {                
                 InitiateUserOptions(showPersons);
             }
 
@@ -76,7 +70,6 @@ namespace Obligatorisk_oppgave_1
             var sonja = new Person { Id = 7, FirstName = "Sonja", BirthYear = 1937 };
             var olav = new Person { Id = 8, FirstName = "Olav", BirthYear = 1903 };
 
-         
             sverreMagnus.Father = haakon;
             sverreMagnus.Mother = metteMarit;
             ingridAlexandra.Father = haakon;
@@ -86,8 +79,6 @@ namespace Obligatorisk_oppgave_1
             haakon.Mother = sonja;
             harald.Father = olav;
 
-
-            // Vi lager en ny liste med classen Person og putter inn alle classe objektene.
             var list = new List<Person> { 
             sverreMagnus, ingridAlexandra, haakon, metteMarit, marius, harald, sonja, olav
             };
@@ -95,11 +86,6 @@ namespace Obligatorisk_oppgave_1
             return list;
 
         }
-        public void showList()
-        {
-            
-        }
-
 
         static void initiateWelcomeText()
         {
