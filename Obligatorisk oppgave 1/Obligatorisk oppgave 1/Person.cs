@@ -19,9 +19,19 @@ namespace Obligatorisk_oppgave_1
         {
           
         }
-        public void show()
+        public void Show()
         {
-            Console.WriteLine(this.BirthYear);
+           
+            Console.WriteLine($"Firstname =  {FirstName} ");
+            Console.WriteLine($"Lastname =  {LastName} ");
+            Console.WriteLine($"Birthyear =  {BirthYear}");
+            Console.WriteLine($"Mother =  {Mother}");
+            Console.WriteLine($"Father =  {Father}");
+            Console.WriteLine($"Id =  {Id}");
+            Console.WriteLine("\n");
+            Console.WriteLine("---------------------------------------");
+            Console.WriteLine("\n");
+
         }
     }
 }
