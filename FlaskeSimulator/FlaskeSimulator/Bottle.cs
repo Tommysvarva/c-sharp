@@ -1,35 +1,40 @@
 ﻿using System;
-using System.Collections.Generic;
 
-
-namespace FlaskeSimulator
+namespace FlaskeTing
 {
     public class Bottle
     {
-        public int capacity;
-        public int content;
-        public Bottle(int capacityValue, int contentValue)
+        public int Capacity { get; }
+        public int Content { get; private set; }
+
+        public Bottle(int capacity)
         {
-            this.capacity = capacityValue;
-            this.content = contentValue;
+            Capacity = capacity;
         }
 
-        public void FillFlaskToTop()
+        public void FillToTopFromTap()
         {
-            content = capacity;
-            Console.WriteLine(content);
+            Content = Capacity;
         }
 
-        public void FillFlaskWith( int amount)
+        public void Fill(int volume)
         {
-            content = Math.Min(content + amount, capacity);
-        }
-        public int EmptyFlask()
-        {
-            var currentContent = content;
-            content = 0;
-            return currentContent;
+            Content = Math.Min(Content + volume, Capacity);
         }
 
+        public int Empty()
+        {
+            var content = Content;
+            Content = 0;
+            return content;
+        }
+
+        public void FillToTop(Bottle bottle)
+        {
+            var maxFillVolume = Capacity - Content;
+            var realFillVolume = Math.Min(maxFillVolume, bottle.Content);
+            Content += realFillVolume;
+            bottle.Content -= realFillVolume;
+        }
     }
 }
