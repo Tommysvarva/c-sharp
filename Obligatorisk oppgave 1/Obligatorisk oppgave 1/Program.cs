@@ -25,9 +25,9 @@ namespace Obligatorisk_oppgave_1
             }
             else if (option == "liste")
             {
-                for (var i = 0; i < showPersons.Count - 1; i++)
+                for (var i = 0; i <= showPersons.Count - 1; i++)
                 {
-                    showPersons[i].Show();
+                    showPersons[i].Show(showPersons);
                 }
             }
             else if (option.Length >= 7)
@@ -45,12 +45,12 @@ namespace Obligatorisk_oppgave_1
         private static void ShowPersonsBasedOnId(string option, List<Person> showPersons)
         {
             if (option.Length == 7) {
-                var id = Convert.ToInt32(option.Substring(5, 1));
-                showPersons[id].Show();
+                var id = Convert.ToInt32(option.Substring(5, 1)) - 1;
+                showPersons[id].Show(showPersons);
                 InitiateUserOptions(showPersons);
             }
-            else if (option.Length == 8) { var id = Convert.ToInt32(option.Substring(5, 2));
-                showPersons[id].Show();
+            else if (option.Length == 8) { var id = Convert.ToInt32(option.Substring(5, 2)) -1;
+                showPersons[id].Show(showPersons);
                 InitiateUserOptions(showPersons);
             } else
             {                
@@ -65,6 +65,7 @@ namespace Obligatorisk_oppgave_1
             var ingridAlexandra = new Person { Id = 2, FirstName = "Ingrid Alexandra", BirthYear = 2004 };
             var haakon = new Person { Id = 3, FirstName = "Haakon Magnus", BirthYear = 1973 };
             var metteMarit = new Person { Id = 4, FirstName = "Mette-Marit", BirthYear = 1973 };
+
             var marius = new Person { Id = 5, FirstName = "Marius", LastName = "Borg Høiby", BirthYear = 1997 };
             var harald = new Person { Id = 6, FirstName = "Harald", BirthYear = 1937 };
             var sonja = new Person { Id = 7, FirstName = "Sonja", BirthYear = 1937 };
