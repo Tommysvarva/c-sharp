@@ -25,10 +25,7 @@ namespace Obligatorisk_oppgave_1
             }
             else if (option == "liste")
             {
-                for (var i = 0; i < showPersons.Count - 1; i++)
-                {
-                    showPersons[i].Show();
-                }
+                ShowListOfPersons(showPersons);
             }
             else if (option.Length >= 7)
             {
@@ -39,6 +36,14 @@ namespace Obligatorisk_oppgave_1
             {
                 Console.WriteLine("Type in you command...");
                 InitiateUserOptions(showPersons);
+            }
+        }
+
+        private static void ShowListOfPersons(List<Person> showPersons)
+        {
+            for (var i = 0; i < showPersons.Count - 1; i++)
+            {
+                showPersons[i].Show();
             }
         }
 
