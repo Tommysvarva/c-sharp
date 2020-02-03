@@ -15,22 +15,10 @@ namespace Obligatorisk_oppgave_1
 
         public Person()
         {
-          
-        }
-        //public void Show()
-        //{
-        //    Console.WriteLine($"Firstname =  {FirstName} ");
-        //    if (LastName != null) Console.WriteLine($"Lastname =  {LastName} ");
-        //    Console.WriteLine($"Birthyear =  {BirthYear}");
-        //    if (Mother != null) Console.WriteLine($"Mother =  {Mother.FirstName} id={Mother.Id}");
-        //    if (Father != null) Console.WriteLine($"Father =  {Father.FirstName} id={Father.Id}");
-        //    Console.WriteLine($"Id =  {Id}");
-        //    Console.WriteLine("\n");
-        //    Console.WriteLine("---------------------------------------");
-        //    Console.WriteLine("\n");
 
-        //}
-        public void Show(List<Person> list)
+        }
+
+        public void Show()
         {
 
             Console.WriteLine($"Firstname =  {FirstName} ");
@@ -42,33 +30,5 @@ namespace Obligatorisk_oppgave_1
 
 
         }
-
-        //private void ifMotherOrFatherPrintInfo(List<Person> list)
-        //{
-        //    for (var i = 0; i < list.Count ; i++)
-        //    {
-        //        if (list[i].Mother != null)
-        //        {
-        //            if (FirstName == list[i].Mother.FirstName)
-        //            {
-        //                Console.WriteLine($"Child: FirstName = {list[i].FirstName}  Id = {list[i].Id}");
-        //                continue;
-        //            }
-                  
-        //        }
-        //        if (list[i].Father != null)
-        //        {
-        //            if (FirstName == list[i].Father.FirstName)
-        //            {
-        //                Console.WriteLine($"Child:{list[i].FirstName}  Id = {list[i].Id}");
-        //                continue;
-        //            }
-        //        }
-
-        //    }
-        }
     }
-
-    
-
-   
+}

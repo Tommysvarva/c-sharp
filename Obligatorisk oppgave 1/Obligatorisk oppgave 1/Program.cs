@@ -13,48 +13,58 @@ namespace Obligatorisk_oppgave_1
             initiateWelcomeText();
             while (true)
             {
-                Console.WriteLine("Type in you command...");
-                var option = Console.ReadLine();
-                if (option == "hjelp")
-                {
-                    initiateWelcomeText();
-
-                }
-                else if (option == "liste")
-                {
-                    for (var i = 0; i <= showPersons.Count - 1; i++)
-                    {
-                        showPersons[i].Show(showPersons);
-                        ifMotherOrFatherPrintInfo(showPersons, i);
-                    }
-                }
-                else if (option.Length >= 7)
-                {
-                    ShowPersonsBasedOnId(option, showPersons);
-
-                }
-                else
-                {
-                    Console.WriteLine("Type in you command...");
-                    
-                }
+                InitiateUserOptions(showPersons);
             }
         }
-      
+
+
+
+        private static void InitiateUserOptions(List<Person> showPersons)
+        {
+            Console.WriteLine("Type in you command...");
+            var option = Console.ReadLine();
+            if (option == "hjelp")
+            {
+                initiateWelcomeText();
+
+            }
+            else if (option == "liste")
+            {
+                for (var i = 0; i <= showPersons.Count - 1; i++)
+                {
+                    showPersons[i].Show();
+                    ifMotherOrFatherPrintInfo(showPersons, i);
+                }
+            }
+            else if (option.Length >= 7)
+            {
+                ShowPersonsBasedOnId(option, showPersons);
+
+            }
+            else
+            {
+                Console.WriteLine("Type in you command...");
+
+            }
+        }
+
         private static void ShowPersonsBasedOnId(string option, List<Person> showPersons)
         {
-            if (option.Length == 7) {
+            if (option.Length == 7)
+            {
                 var id = Convert.ToInt32(option.Substring(5, 1)) - 1;
-                showPersons[id].Show(showPersons);
-                ifMotherOrFatherPrintInfo(showPersons,id);
+                showPersons[id].Show();
+                ifMotherOrFatherPrintInfo(showPersons, id);
 
 
             }
-            else if (option.Length == 8) { var id = Convert.ToInt32(option.Substring(5, 2)) -1;
-                showPersons[id].Show(showPersons);
+            else if (option.Length == 8)
+            {
+                var id = Convert.ToInt32(option.Substring(5, 2)) - 1;
+                showPersons[id].Show();
                 ifMotherOrFatherPrintInfo(showPersons, id);
 
-            } 
+            }
 
         }
 
@@ -79,7 +89,7 @@ namespace Obligatorisk_oppgave_1
             haakon.Mother = sonja;
             harald.Father = olav;
 
-            var list = new List<Person> { 
+            var list = new List<Person> {
             sverreMagnus, ingridAlexandra, haakon, metteMarit, marius, harald, sonja, olav
             };
 
@@ -106,7 +116,7 @@ namespace Obligatorisk_oppgave_1
                     {
                         Console.WriteLine($"Child:{list[i].FirstName}  Id = {list[i].Id}");
 
-                  
+
                         continue;
                     }
                 }
@@ -115,7 +125,7 @@ namespace Obligatorisk_oppgave_1
         }
 
 
-            static void initiateWelcomeText()
+        static void initiateWelcomeText()
         {
             Console.WriteLine("\n");
             Console.WriteLine("Velkommen til applikasjonen!");
