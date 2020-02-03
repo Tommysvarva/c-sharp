@@ -36,7 +36,7 @@ namespace Obligatorisk_oppgave_1
                     ifMotherOrFatherPrintInfo(showPersons, i);
                 }
             }
-            else if (option.Length >= 7)
+            else if (option.Length >= 7)  
             {
                 ShowPersonsBasedOnId(option, showPersons);
 
@@ -67,6 +67,32 @@ namespace Obligatorisk_oppgave_1
             }
 
         }
+     
+        public static void ifMotherOrFatherPrintInfo(List<Person> list, int Id)
+        {
+            for (var i = 0; i < list.Count; i++)
+            {
+
+                if (list[i].Mother != null)
+                {
+                    if (list[Id].FirstName == list[i].Mother.FirstName)
+                    {
+                        Console.WriteLine($"Child: FirstName = {list[i].FirstName}  Id = {list[i].Id}");
+                        continue;
+                    }
+
+                }
+                if (list[i].Father != null)
+                {
+                    if (list[Id].FirstName == list[i].Father.FirstName)
+                    {
+                        Console.WriteLine($"Child:{list[i].FirstName}  Id = {list[i].Id}");
+                        continue;
+                    }
+                }
+
+            }
+        }
 
         public static List<Person> CreatePersons()
         {
@@ -96,35 +122,6 @@ namespace Obligatorisk_oppgave_1
             return list;
 
         }
-        public static void ifMotherOrFatherPrintInfo(List<Person> list, int Id)
-        {
-            for (var i = 0; i < list.Count; i++)
-            {
-
-                if (list[i].Mother != null)
-                {
-                    if (list[Id].FirstName == list[i].Mother.FirstName)
-                    {
-                        Console.WriteLine($"Child: FirstName = {list[i].FirstName}  Id = {list[i].Id}");
-                        continue;
-                    }
-
-                }
-                if (list[i].Father != null)
-                {
-                    if (list[Id].FirstName == list[i].Father.FirstName)
-                    {
-                        Console.WriteLine($"Child:{list[i].FirstName}  Id = {list[i].Id}");
-
-
-                        continue;
-                    }
-                }
-
-            }
-        }
-
-
         static void initiateWelcomeText()
         {
             Console.WriteLine("\n");
